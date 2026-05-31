@@ -1,0 +1,15 @@
+[package]
+name = "twenty-twenty-twenty"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+winit = "0.28"
+softbuffer = "0.3"
+raw-window-handle = "0.5"
+tray-icon = "0.19"
+muda = "0.15"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["winuser"] }
+winreg = "0.52"
